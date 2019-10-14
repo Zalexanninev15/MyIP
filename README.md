@@ -1,4 +1,5 @@
 # IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now))
+## [Скачать последнюю версию](https://github.com/Zalexanninev15/IP-Now-next/releases/download/1.1/IP_Now2.zip)
 ## Описание
 Приложение для определения вашего HOST и IP под Windows.
 ## Системные требования
