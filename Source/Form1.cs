@@ -17,6 +17,9 @@ namespace WindowsFormsApplication2
     public partial class Form1 : MaterialForm
     {
         [Obsolete]
+        Form f;
+
+        [Obsolete]
         public Form1()
         {
             InitializeComponent();
@@ -41,10 +44,10 @@ namespace WindowsFormsApplication2
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.B_w = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -56,9 +59,9 @@ namespace WindowsFormsApplication2
             this.materialLabel1.Location = new System.Drawing.Point(12, 80);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(219, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(228, 19);
             this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "Ваш HOST (в домашней сети)";
+            this.materialLabel1.Text = "Имя компьютера в сети (host) ";
             // 
             // materialLabel2
             // 
@@ -77,14 +80,14 @@ namespace WindowsFormsApplication2
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(237, 80);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(246, 80);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.PasswordChar = '\0';
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(375, 23);
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(193, 23);
             this.materialSingleLineTextField1.TabIndex = 2;
             this.materialSingleLineTextField1.TabStop = false;
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
@@ -93,14 +96,14 @@ namespace WindowsFormsApplication2
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(235, 170);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(244, 170);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
             this.materialSingleLineTextField2.SelectedText = "";
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(375, 23);
+            this.materialSingleLineTextField2.Size = new System.Drawing.Size(195, 23);
             this.materialSingleLineTextField2.TabIndex = 3;
             this.materialSingleLineTextField2.TabStop = false;
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
@@ -110,11 +113,11 @@ namespace WindowsFormsApplication2
             // 
             this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(29, 211);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(244, 212);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(185, 36);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(195, 33);
             this.materialRaisedButton1.TabIndex = 4;
             this.materialRaisedButton1.Text = "ОБНОВИТЬ";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -124,7 +127,7 @@ namespace WindowsFormsApplication2
             // 
             this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(618, 79);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(445, 80);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
@@ -138,11 +141,11 @@ namespace WindowsFormsApplication2
             // 
             this.materialRaisedButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(616, 170);
+            this.materialRaisedButton3.Location = new System.Drawing.Point(445, 170);
             this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton3.Name = "materialRaisedButton3";
             this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(118, 23);
+            this.materialRaisedButton3.Size = new System.Drawing.Size(118, 24);
             this.materialRaisedButton3.TabIndex = 6;
             this.materialRaisedButton3.Text = "скопировать";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
@@ -152,7 +155,7 @@ namespace WindowsFormsApplication2
             // 
             this.B_w.Depth = 0;
             this.B_w.Font = new System.Drawing.Font("Roboto", 10F);
-            this.B_w.Location = new System.Drawing.Point(47, 264);
+            this.B_w.Location = new System.Drawing.Point(445, 214);
             this.B_w.Margin = new System.Windows.Forms.Padding(0);
             this.B_w.MouseLocation = new System.Drawing.Point(-1, -1);
             this.B_w.MouseState = MaterialSkin.MouseState.HOVER;
@@ -164,28 +167,15 @@ namespace WindowsFormsApplication2
             this.B_w.UseVisualStyleBackColor = true;
             this.B_w.CheckedChanged += new System.EventHandler(this.B_w_CheckedChanged_1);
             // 
-            // materialLabel3
-            // 
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(233, 211);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(421, 92);
-            this.materialLabel3.TabIndex = 8;
-            this.materialLabel3.Text = "Приложение разработано пользователем Zalexanninev15\r\n\r\nВерсия: 1.1\r\nСборка: 14102" +
-    "019";
-            // 
             // materialRaisedButton4
             // 
             this.materialRaisedButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(616, 123);
+            this.materialRaisedButton4.Location = new System.Drawing.Point(445, 124);
             this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton4.Name = "materialRaisedButton4";
             this.materialRaisedButton4.Primary = true;
-            this.materialRaisedButton4.Size = new System.Drawing.Size(118, 23);
+            this.materialRaisedButton4.Size = new System.Drawing.Size(118, 24);
             this.materialRaisedButton4.TabIndex = 11;
             this.materialRaisedButton4.Text = "скопировать";
             this.materialRaisedButton4.UseVisualStyleBackColor = true;
@@ -195,14 +185,14 @@ namespace WindowsFormsApplication2
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(235, 123);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(246, 124);
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
             this.materialSingleLineTextField3.PasswordChar = '\0';
             this.materialSingleLineTextField3.SelectedText = "";
             this.materialSingleLineTextField3.SelectionLength = 0;
             this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(375, 23);
+            this.materialSingleLineTextField3.Size = new System.Drawing.Size(193, 23);
             this.materialSingleLineTextField3.TabIndex = 10;
             this.materialSingleLineTextField3.TabStop = false;
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
@@ -213,20 +203,34 @@ namespace WindowsFormsApplication2
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(21, 124);
+            this.materialLabel4.Location = new System.Drawing.Point(30, 124);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(193, 19);
             this.materialLabel4.TabIndex = 9;
             this.materialLabel4.Text = "Ваш IP (в домашней сети)";
             // 
+            // materialRaisedButton5
+            // 
+            this.materialRaisedButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton5.Depth = 0;
+            this.materialRaisedButton5.Location = new System.Drawing.Point(47, 212);
+            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton5.Name = "materialRaisedButton5";
+            this.materialRaisedButton5.Primary = true;
+            this.materialRaisedButton5.Size = new System.Drawing.Size(151, 33);
+            this.materialRaisedButton5.TabIndex = 12;
+            this.materialRaisedButton5.Text = "о приложении";
+            this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(770, 314);
+            this.ClientSize = new System.Drawing.Size(587, 261);
+            this.Controls.Add(this.materialRaisedButton5);
             this.Controls.Add(this.materialRaisedButton4);
             this.Controls.Add(this.materialSingleLineTextField3);
             this.Controls.Add(this.materialLabel4);
-            this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.B_w);
             this.Controls.Add(this.materialRaisedButton3);
             this.Controls.Add(this.materialRaisedButton2);
@@ -237,11 +241,10 @@ namespace WindowsFormsApplication2
             this.Controls.Add(this.materialLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "IP Now 2.0";
+            this.Text = "Мой IP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -311,6 +314,13 @@ namespace WindowsFormsApplication2
         private void materialSingleLineTextField2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
+        {
+            f = new qr_code.Form2();
+            f.Show();
+            B_w.Checked = false;
         }
     }
 }
