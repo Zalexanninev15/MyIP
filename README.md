@@ -1,5 +1,6 @@
 # Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now)))
 ## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/download/1.2/MyIP.zip)
+## Скриншот
 ![](https://i.imgur.com/eciBkC3.png)
 ## Описание
 Приложение для определения вашего имени, локального IP и IP в сети Интернет под Windows.
