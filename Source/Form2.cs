@@ -22,9 +22,6 @@ namespace qr_code
             // Дефолтная тема
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red500, Primary.Red700, Primary.Red100, Accent.Blue200, TextShade.WHITE);
-            // 1 - под заголовком, 2 - заголовок, 3 - ?, 4 - элементы выбора
         }
 
         private void Form2_Load_1(object sender, EventArgs e)
@@ -32,7 +29,7 @@ namespace qr_code
 
         }
 
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Zalexanninev15/MyIP");
         }

@@ -113,11 +113,11 @@ namespace WindowsFormsApplication2
             // 
             this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(244, 212);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(246, 210);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(195, 33);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(198, 33);
             this.materialRaisedButton1.TabIndex = 4;
             this.materialRaisedButton1.Text = "ОБНОВИТЬ";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -155,13 +155,13 @@ namespace WindowsFormsApplication2
             // 
             this.B_w.Depth = 0;
             this.B_w.Font = new System.Drawing.Font("Roboto", 10F);
-            this.B_w.Location = new System.Drawing.Point(445, 214);
+            this.B_w.Location = new System.Drawing.Point(452, 213);
             this.B_w.Margin = new System.Windows.Forms.Padding(0);
             this.B_w.MouseLocation = new System.Drawing.Point(-1, -1);
             this.B_w.MouseState = MaterialSkin.MouseState.HOVER;
             this.B_w.Name = "B_w";
             this.B_w.Ripple = true;
-            this.B_w.Size = new System.Drawing.Size(138, 30);
+            this.B_w.Size = new System.Drawing.Size(133, 30);
             this.B_w.TabIndex = 7;
             this.B_w.Text = "ТЁМНАЯ ТЕМА";
             this.B_w.UseVisualStyleBackColor = true;
@@ -214,11 +214,11 @@ namespace WindowsFormsApplication2
             // 
             this.materialRaisedButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(47, 212);
+            this.materialRaisedButton5.Location = new System.Drawing.Point(56, 210);
             this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton5.Name = "materialRaisedButton5";
             this.materialRaisedButton5.Primary = true;
-            this.materialRaisedButton5.Size = new System.Drawing.Size(151, 33);
+            this.materialRaisedButton5.Size = new System.Drawing.Size(128, 33);
             this.materialRaisedButton5.TabIndex = 12;
             this.materialRaisedButton5.Text = "о приложении";
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
@@ -320,7 +320,6 @@ namespace WindowsFormsApplication2
         {
             f = new qr_code.Form2();
             f.Show();
-            B_w.Checked = false;
         }
     }
 }

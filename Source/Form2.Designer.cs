@@ -29,55 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // materialLabel3
+            // pictureBox2
             // 
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(12, 231);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(250, 98);
-            this.materialLabel3.TabIndex = 9;
-            this.materialLabel3.Text = "Приложение разработано пользователем Zalexanninev15\r\n\r\nВерсия: 1.2\r\nСборка: 04112" +
-    "019";
+            this.pictureBox2.Image = global::IP_Now.Properties.Resources.laptop;
+            this.pictureBox2.Location = new System.Drawing.Point(52, 81);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(104, 95);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // materialLabel2
             // 
-            this.pictureBox1.Image = global::IP_Now.Properties.Resources.laptop;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 80);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 139);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(26, 193);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(163, 76);
+            this.materialLabel2.TabIndex = 20;
+            this.materialLabel2.Text = "Мой IP\r\nАвтор: Zalexanninev15\r\nВерсия: 1.2.1\r\nСборка: 15112019";
             // 
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(16, 337);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(52, 282);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(228, 40);
-            this.materialRaisedButton1.TabIndex = 11;
-            this.materialRaisedButton1.Text = "официальная страница";
+            this.materialRaisedButton1.Size = new System.Drawing.Size(104, 35);
+            this.materialRaisedButton1.TabIndex = 19;
+            this.materialRaisedButton1.Text = "GitHub";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click_1);
             // 
             // Form2
             // 
-            this.ClientSize = new System.Drawing.Size(263, 389);
+            this.ClientSize = new System.Drawing.Size(217, 329);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialRaisedButton1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.materialLabel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -86,15 +85,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О приложении";
             this.Load += new System.EventHandler(this.Form2_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }
