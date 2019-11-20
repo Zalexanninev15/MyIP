@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace qr_code
 {
     static class Program
     {
@@ -12,12 +12,11 @@ namespace WindowsFormsApplication2
         /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
-        [Obsolete]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(mainForm: new Form1());
+            Application.Run(new Form1());
         }
     }
 }

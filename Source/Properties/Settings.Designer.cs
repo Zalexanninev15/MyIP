@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IP_Now.Properties {
+namespace qr_code.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IP_Now.Properties {
+namespace qr_code.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace IP_Now.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IP_Now.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("qr_code.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace IP_Now.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap laptop {
+        internal static System.Drawing.Bitmap qrcreator_103328 {
             get {
-                object obj = ResourceManager.GetObject("laptop", resourceCulture);
+                object obj = ResourceManager.GetObject("qrcreator_103328", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
