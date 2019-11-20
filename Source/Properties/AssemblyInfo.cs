@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Конструктор QR")]
+[assembly: AssemblyTitle("Мой IP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zalexanninev15")]
-[assembly: AssemblyProduct("Конструктор QR")]
+[assembly: AssemblyProduct("Мой IP")]
 [assembly: AssemblyCopyright("Zalexanninev15")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("ff67d52b-a3f3-4c79-bcf5-4310afd11ae5")]
+[assembly: Guid("0e8d5e60-69d4-44a1-bf32-77e8ebd7f3cc")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
