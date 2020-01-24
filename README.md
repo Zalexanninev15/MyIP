@@ -1,7 +1,9 @@
 # Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now)))
-## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/download/1.2.1/App.zip)
-## Скриншот
-![](https://i.imgur.com/eciBkC3.png)
+## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/download/1.3/App.zip) | [ВСЕ ВЕРСИИ](https://github.com/Zalexanninev15/MyIP/releases)
+## [Скачать исходники (ZIP)](https://github.com/Zalexanninev15/MyIP/archive/master.zip)
+## Скриншоты
+![](https://i.imgur.com/XtFoaqB.jpg)
+![](https://i.imgur.com/Ny7kbci.jpg)
 ## Описание
 Приложение для определения вашего имени в локальной сети, IP в локальной сети и IP в сети Интернет под Windows.  Используется Material Design, а также имеется поддержка тёмной темы.
 ## Системные требования
