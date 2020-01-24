@@ -56,7 +56,7 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(163, 76);
             this.materialLabel2.TabIndex = 20;
-            this.materialLabel2.Text = "Мой IP\r\nАвтор: Zalexanninev15\r\nВерсия: 1.2.1\r\nСборка: 15112019";
+            this.materialLabel2.Text = "Мой IP\r\nАвтор: Zalexanninev15\r\nВерсия: 1.3\r\nСборка: 24012020";
             // 
             // materialRaisedButton1
             // 
