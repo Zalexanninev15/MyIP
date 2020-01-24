@@ -2,8 +2,8 @@
 ## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/download/1.3/App.zip) | [ВСЕ ВЕРСИИ](https://github.com/Zalexanninev15/MyIP/releases)
 ## [Скачать исходники (ZIP)](https://github.com/Zalexanninev15/MyIP/archive/master.zip)
 ## Скриншоты
-![](https://i.imgur.com/XtFoaqB.jpg)
-![](https://i.imgur.com/Ny7kbci.jpg)
+![](https://i.imgur.com/aihxH9Q.jpg)
+![](https://i.imgur.com/39YoYRt.jpg)
 ## Описание
 Приложение для определения вашего имени в локальной сети, IP в локальной сети и IP в сети Интернет под Windows.  Используется Material Design, а также имеется поддержка тёмной темы.
 ## Системные требования
