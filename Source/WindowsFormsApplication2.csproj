@@ -40,7 +40,7 @@
     <ApplicationIcon>laptop.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="laptop.ico" />
+    <None Include="Resources\internet-connections-off_icon-icons.com_68537.png" />
     <None Include="Resources\laptop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

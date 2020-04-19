@@ -1,26 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using MaterialSkin;
 using MaterialSkin.Animations;
 using MaterialSkin.Controls;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace WindowsFormsApplication2
 {
     public partial class Form1 : MaterialForm
     {
-        [Obsolete]
         Form f;
-        string theme;
+        string theme, host, ip;
 
-        [Obsolete]
         public Form1()
         {
             InitializeComponent();
@@ -45,22 +38,44 @@ namespace WindowsFormsApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string Host = System.Net.Dns.GetHostName();
-            WebClient client = new WebClient();
-            string IP = client.DownloadString("http://api.ipify.org");
-            materialSingleLineTextField1.Text = Host;
-            materialSingleLineTextField2.Text = IP;
-            materialSingleLineTextField3.Text = Dns.GetHostByName(Host).AddressList[0].ToString();
+            try
+            {
+                host = Dns.GetHostName();
+                WebClient client = new WebClient();
+                ip = client.DownloadString("http://api.ipify.org");
+                materialSingleLineTextField1.Text = host;
+                materialSingleLineTextField2.Text = ip;
+                materialSingleLineTextField3.Text = Dns.GetHostByName(host).AddressList[0].ToString();
+
+            }
+            catch
+            {
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = true;
+                pictureBox3.Visible = true;
+            }
         }
 
         private void MaterialRaisedButton1_Click(object sender, EventArgs e)
         {
-            string Host = System.Net.Dns.GetHostName();
-            WebClient client = new WebClient();
-            string IP = client.DownloadString("http://api.ipify.org");
-            materialSingleLineTextField1.Text = Host;
-            materialSingleLineTextField2.Text = IP;
-            materialSingleLineTextField3.Text = Dns.GetHostByName(Host).AddressList[0].ToString();
+            try
+            {
+                host = Dns.GetHostName();
+                WebClient client = new WebClient();
+                ip = client.DownloadString("http://api.ipify.org");
+                materialSingleLineTextField1.Text = host;
+                materialSingleLineTextField2.Text = ip;
+                materialSingleLineTextField3.Text = Dns.GetHostByName(host).AddressList[0].ToString();
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = false;
+                pictureBox3.Visible = false;
+            }
+            catch
+            {
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = true;
+                pictureBox3.Visible = true;
+            }
         }
 
         private void MaterialRaisedButton3_Click(object sender, EventArgs e)
