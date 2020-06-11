@@ -26,7 +26,7 @@ namespace qr_code
 
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://zalexanninev15.github.io/MyIP/");
+            System.Diagnostics.Process.Start("https://github.com/Zalexanninev15/MyIP/");
         }
     }
 }

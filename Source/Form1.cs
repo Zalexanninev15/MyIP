@@ -6,6 +6,8 @@ using MaterialSkin.Animations;
 using MaterialSkin.Controls;
 using System.Linq;
 using System.Linq.Expressions;
+using System.IO;
+using Newtonsoft.Json.Linq;
 
 namespace WindowsFormsApplication2
 {
@@ -46,6 +48,8 @@ namespace WindowsFormsApplication2
                 materialSingleLineTextField1.Text = host;
                 materialSingleLineTextField2.Text = ip;
                 materialSingleLineTextField3.Text = Dns.GetHostByName(host).AddressList[0].ToString();
+                materialLabel5.Text = GeoInfo(ip);
+                ip = null;
 
             }
             catch
@@ -66,9 +70,12 @@ namespace WindowsFormsApplication2
                 materialSingleLineTextField1.Text = host;
                 materialSingleLineTextField2.Text = ip;
                 materialSingleLineTextField3.Text = Dns.GetHostByName(host).AddressList[0].ToString();
+                materialLabel5.Text = GeoInfo(ip);
+                ip = null;
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
+                ip = null;
             }
             catch
             {
@@ -94,7 +101,6 @@ namespace WindowsFormsApplication2
         {
             if (B_w.Checked)
             {
-                //Включение тёмной темы (галочка)
                 B_w.Text = "ТЁМНАЯ ТЕМА";
                 var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
@@ -104,7 +110,6 @@ namespace WindowsFormsApplication2
             }
             if (!B_w.Checked)
             {
-                //Выключение тёмной темы (галочка) (включение дефолтной темы)
                 B_w.Text = "ТЁМНАЯ ТЕМА";
                 var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -124,6 +129,41 @@ namespace WindowsFormsApplication2
         {
             f = new qr_code.Form2();
             f.Show();
+        }
+
+        public static string GeoInfo(string IP)
+        {
+            try
+            {
+                string url = "http://free.ipwhois.io/json/" + IP + "?lang=ru";
+                var request = WebRequest.Create(url);
+                using (WebResponse wrs = request.GetResponse())
+                using (Stream stream = wrs.GetResponseStream())
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    string json = reader.ReadToEnd();
+                    var obj = JObject.Parse(json);
+                    string ip = (string)obj["ip"];
+                    string type = (string)obj["type"];
+                    string continent = (string)obj["continent"];
+                    string country = (string)obj["country"];
+                    string region = (string)obj["region"];
+                    string city = (string)obj["city"];
+                    string country_code = (string)obj["country_code"];
+                    string country_capital = (string)obj["country_capital"];
+                    string timezone = (string)obj["timezone"];
+                    string timezone_gmt = (string)obj["timezone_gmt"];
+                    string currency = (string)obj["currency"];
+                    string currency_code = (string)obj["currency_code"];
+                    string currency_symbol = (string)obj["currency_symbol"];
+                    string currency_rates = (string)obj["currency_rates"];
+                    string latitude = (string)obj["latitude"];
+                    string longitude = (string)obj["longitude"];
+                    string isp = (string)obj["isp"];
+                    return ("IP: " + ip + "\nТип IP адреса: " + type + "\nКонтинент: " + continent + "\nСтрана: " + country + "\nКод страны: " + country_code + "\nСтолица страны: " + country_capital + "\nРегион/область: " + region + "\nГород: " + city + "\nШирота: " + latitude + "\nДолгота: " + longitude + "\nИнтернет-провайдер: " + isp + "\nЧасовой пояс: " + timezone + "\nВремя по Гринвичу: " + timezone_gmt + "\nВалюта: " + currency + "\nКод валюты: " + currency_code + "\nОбозначение валюты: " + currency_symbol + "\nКурс валюты: " + currency_rates);
+                }
+            }
+            catch { return "Сервис не отвечает :( \nПовторите попытку позже."; }
         }
     }
 }
