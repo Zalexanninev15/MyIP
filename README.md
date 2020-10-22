@@ -1,5 +1,5 @@
 # Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now)))
-## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/tag/1.7) | [ВСЕ ВЕРСИИ](https://github.com/Zalexanninev15/MyIP/releases)
+## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/tag/1.8) | [ВСЕ ВЕРСИИ](https://github.com/Zalexanninev15/MyIP/releases)
 ## [Скачать исходники (ZIP)](https://github.com/Zalexanninev15/MyIP/archive/master.zip)
 
 ## Скриншот
