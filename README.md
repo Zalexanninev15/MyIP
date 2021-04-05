@@ -1,4 +1,4 @@
-# Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now))) | [Последняя версия](https://github.com/Zalexanninev15/MyIP/releases/latest)
+# Мой IP | [Последняя версия](https://github.com/Zalexanninev15/MyIP/releases/latest)
 
 [![](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/Zalexanninev15/MyIP)
 [![](https://img.shields.io/github/v/release/Zalexanninev15/MyIP)](https://github.com/Zalexanninev15/MyIP/releases/latest)
