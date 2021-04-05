@@ -6,7 +6,7 @@
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Скриншот
-![](https://i.imgur.com/p4mQlG3.jpg)
+![](https://github.com/Zalexanninev15/MyIP/blob/master/Screenshot.png?raw=true)
 
 ## Описание
 Приложение для определения вашего имени в локальной сети, IP в локальной сети и IP в сети Интернет под Windows. Используется Material Design, а также имеется поддержка тёмной темы. Ранее IP Now 2.0, ветвь 1.x расположена [тут](https://github.com/Zalexanninev15/IP-Now)
