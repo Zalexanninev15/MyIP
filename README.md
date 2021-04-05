@@ -1,6 +1,9 @@
-# Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now)))
-## [Скачать последнюю версию](https://github.com/Zalexanninev15/MyIP/releases/tag/1.8) | [ВСЕ ВЕРСИИ](https://github.com/Zalexanninev15/MyIP/releases)
-## [Скачать исходники (ZIP)](https://github.com/Zalexanninev15/MyIP/archive/master.zip)
+# Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now))) | [Последняя версия](https://github.com/Zalexanninev15/MyIP/releases/latest)
+
+[![](https://img.shields.io/badge/platform-windows-blue.svg)](https://github.com/Zalexanninev15/MyIP)
+[![](https://img.shields.io/github/v/release/Zalexanninev15/MyIP)](https://github.com/Zalexanninev15/MyIP/releases/latest)
+[![](https://img.shields.io/github/downloads/Zalexanninev15/MyIP/total.svg)](https://github.com/Zalexanninev15/MyIP/releases)
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Скриншот
 ![](https://i.imgur.com/p4mQlG3.jpg)
