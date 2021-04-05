@@ -60,12 +60,12 @@ namespace WindowsFormsApplication2
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(304, 203);
+            this.materialLabel1.Location = new System.Drawing.Point(308, 203);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(229, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(225, 19);
             this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "Имя компьютера в сети (хост):";
+            this.materialLabel1.Text = "Имя компьютера в сети (хост)";
             // 
             // materialLabel2
             // 
@@ -73,12 +73,12 @@ namespace WindowsFormsApplication2
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(368, 295);
+            this.materialLabel2.Location = new System.Drawing.Point(425, 293);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(159, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(108, 19);
             this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "Ваш IP (в интернете):";
+            this.materialLabel2.Text = "Публичный IP";
             // 
             // materialSingleLineTextField1
             // 
@@ -210,12 +210,12 @@ namespace WindowsFormsApplication2
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(415, 252);
+            this.materialLabel4.Location = new System.Drawing.Point(424, 247);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(112, 19);
+            this.materialLabel4.Size = new System.Drawing.Size(109, 19);
             this.materialLabel4.TabIndex = 9;
-            this.materialLabel4.Text = "Ваш IP (хоста):";
+            this.materialLabel4.Text = "Локальный IP";
             // 
             // materialRaisedButton5
             // 
@@ -286,12 +286,12 @@ namespace WindowsFormsApplication2
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(24, 105);
+            this.materialLabel5.Location = new System.Drawing.Point(13, 108);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(49, 19);
+            this.materialLabel5.Size = new System.Drawing.Size(102, 19);
             this.materialLabel5.TabIndex = 1;
-            this.materialLabel5.Text = "Текст";
+            this.materialLabel5.Text = "Информация";
             // 
             // materialLabel6
             // 

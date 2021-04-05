@@ -119,11 +119,12 @@ namespace WindowsFormsApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
             try
             {
                 host = Dns.GetHostName();
                 WebClient client = new WebClient();
-                ip = client.DownloadString("http://api.ipify.org");
+                ip = client.DownloadString("https://icanhazip.com/");
                 materialSingleLineTextField1.Text = host;
                 materialSingleLineTextField2.Text = ip;
                 materialSingleLineTextField3.Text = Dns.GetHostByName(host).AddressList[0].ToString();
@@ -145,7 +146,7 @@ namespace WindowsFormsApplication2
             {
                 host = Dns.GetHostName();
                 WebClient client = new WebClient();
-                ip = client.DownloadString("http://api.ipify.org");
+                ip = client.DownloadString("https://icanhazip.com/");
                 materialSingleLineTextField1.Text = host;
                 materialSingleLineTextField2.Text = ip;
                 materialSingleLineTextField3.Text = Dns.GetHostByName(host).AddressList[0].ToString();
@@ -225,7 +226,7 @@ namespace WindowsFormsApplication2
         {
             try
             {
-                string url = "http://free.ipwhois.io/json/" + IP + "?lang=ru";
+                string url = "https://free.ipwhois.io/json/" + IP + "?lang=ru";
                 var request = WebRequest.Create(url);
                 using (WebResponse wrs = request.GetResponse())
                 using (Stream stream = wrs.GetResponseStream())
@@ -233,7 +234,6 @@ namespace WindowsFormsApplication2
                 {
                     string json = reader.ReadToEnd();
                     var obj = JObject.Parse(json);
-                    string ip = (string)obj["ip"];
                     string type = (string)obj["type"];
                     string continent = (string)obj["continent"];
                     string country = (string)obj["country"];
@@ -250,7 +250,7 @@ namespace WindowsFormsApplication2
                     string latitude = (string)obj["latitude"];
                     string longitude = (string)obj["longitude"];
                     string isp = (string)obj["isp"];
-                    return ("IP: " + ip + "\nТип IP адреса: " + type + "\nКонтинент: " + continent + "\nСтрана: " + country + "\nКод страны: " + country_code + "\nСтолица страны: " + country_capital + "\nРегион/область: " + region + "\nГород: " + city + "\nШирота: " + latitude + "\nДолгота: " + longitude + "\nИнтернет-провайдер: " + isp + "\nЧасовой пояс: " + timezone + "\nВремя по Гринвичу: " + timezone_gmt + "\nВалюта: " + currency + "\nКод валюты: " + currency_code + "\nОбозначение валюты: " + currency_symbol + "\nКурс валюты: " + currency_rates);
+                    return ("Тип IP адреса: " + type + "\nКонтинент: " + continent + "\nСтрана: " + country + "\nКод страны: " + country_code + "\nСтолица страны: " + country_capital + "\nРегион/область: " + region + "\nГород: " + city + "\nШирота: " + latitude + "\nДолгота: " + longitude + "\nИнтернет-провайдер: " + isp + "\nЧасовой пояс: " + timezone + "\nВремя по Гринвичу: " + timezone_gmt + "\nВалюта: " + currency + "\nКод валюты: " + currency_code + "\nОбозначение валюты: " + currency_symbol + "\nКурс валюты: " + currency_rates);
                 }
             }
             catch { return "Сервис не отвечает :( \nПовторите попытку позже."; }

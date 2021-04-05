@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("MyIP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Приложение для определения вашего имени в локальной сети, IP в локальной сети и IP в сети Интернет под Windows.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zalexanninev15")]
 [assembly: AssemblyProduct("MyIP")]
-[assembly: AssemblyCopyright("Copyright © 2019-2020, Zalexanninev15")]
-[assembly: AssemblyTrademark("MyIP (2019-2020)")]
+[assembly: AssemblyCopyright("Copyright © 2019-2021, Zalexanninev15")]
+[assembly: AssemblyTrademark("MyIP (2019-2021)")]
 [assembly: AssemblyCulture("")]
 
 // Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.8.0.0")]
-[assembly: AssemblyFileVersion("1.8.0.0")]
+[assembly: AssemblyVersion("1.8.1.0")]
+[assembly: AssemblyFileVersion("1.8.1.0")]
