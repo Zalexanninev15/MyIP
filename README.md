@@ -1,6 +1,6 @@
 # Мой IP (Ранее IP Now 2.0 ([Ветвь 1.x](https://github.com/Zalexanninev15/IP-Now))) | [Последняя версия](https://github.com/Zalexanninev15/MyIP/releases/latest)
 
-[![](https://img.shields.io/badge/platform-windows-blue.svg)](https://github.com/Zalexanninev15/MyIP)
+[![](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/Zalexanninev15/MyIP)
 [![](https://img.shields.io/github/v/release/Zalexanninev15/MyIP)](https://github.com/Zalexanninev15/MyIP/releases/latest)
 [![](https://img.shields.io/github/downloads/Zalexanninev15/MyIP/total.svg)](https://github.com/Zalexanninev15/MyIP/releases)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -9,7 +9,7 @@
 ![](https://i.imgur.com/p4mQlG3.jpg)
 
 ## Описание
-Приложение для определения вашего имени в локальной сети, IP в локальной сети и IP в сети Интернет под Windows. Используется Material Design, а также имеется поддержка тёмной темы.
+Приложение для определения вашего имени в локальной сети, IP в локальной сети и IP в сети Интернет под Windows. Используется Material Design, а также имеется поддержка тёмной темы. Ранее IP Now 2.0, ветвь 1.x расположена [тут](https://github.com/Zalexanninev15/IP-Now)
 
 ## Особенности
 * Приложение портативное и не требует установки
