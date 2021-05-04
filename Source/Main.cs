@@ -92,8 +92,7 @@ namespace WindowsFormsApplication2
         }
 
         Form f;
-        string theme, host, ip;
-        int form2 = 0; 
+        string theme, host, ip; int form2 = 0; 
         
         public Form1()
         {
@@ -207,19 +206,12 @@ namespace WindowsFormsApplication2
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
-        foreach (Form f in Application.OpenForms)
+            foreach (Form f in Application.OpenForms)
             {
-                if (f.Name == "Form2")
-                {
-                    form2 = 1;
-                }
+                if (f.Name == "Form2") { form2 = 1; }
                 else { form2 = 0; }
             }
-            if (form2 == 0)
-            {
-                f = new qr_code.Form2();
-                f.Show();
-            }
+            if (form2 == 0) { f = new qr_code.Form2(); f.Show(); }
         }
 
         public static string GeoInfo(string IP)

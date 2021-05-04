@@ -24,9 +24,6 @@ namespace qr_code
             materialSkinManager.AddFormToManage(this);
         }
 
-        private void materialRaisedButton1_Click_1(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/Zalexanninev15/MyIP/");
-        }
+        private void materialRaisedButton1_Click_1(object sender, EventArgs e) { System.Diagnostics.Process.Start("https://github.com/Zalexanninev15/MyIP/"); }
     }
 }
