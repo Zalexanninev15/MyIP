@@ -24,7 +24,7 @@
 
 ## Системные требования
 * **Операционная система:** Windows 7/8/8.1/10
-* **Дополнительно:** .NET Framework 4.5, интернет-соединение (обязательно)
+* **Дополнительно:** .NET Framework 4.5
 
 ## Используемые библиотеки 
 * [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE))
