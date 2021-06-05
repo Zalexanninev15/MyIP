@@ -37,7 +37,7 @@
     <StartupObject>WindowsFormsApplication2.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>laptop.ico</ApplicationIcon>
+    <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
@@ -106,7 +106,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="laptop.ico" />
+    <Content Include="app.ico" />
     <None Include="Resources\internet-connections-off_icon-icons.com_68537.png" />
     <None Include="Resources\laptop.png" />
   </ItemGroup>

@@ -218,7 +218,7 @@ namespace WindowsFormsApplication2
         {
             try
             {
-                string url = "https://free.ipwhois.io/json/" + IP + "?lang=ru";
+                string url = "http://ipwhois.app/json/" + IP + "?lang=ru";
                 var request = WebRequest.Create(url);
                 using (WebResponse wrs = request.GetResponse())
                 using (Stream stream = wrs.GetResponseStream())
