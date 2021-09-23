@@ -1,7 +1,7 @@
 # Мой IP | [Последняя версия](https://github.com/Zalexanninev15/MyIP/releases/latest)
 
 [![](https://img.shields.io/badge/OS-Windows-informational?logo=windows)](https://github.com/Zalexanninev15/MyIP)
-[![](https://img.shields.io/badge/.NET-Framework_4.5-4E2ACD.svg)](https://www.microsoft.com/en-US/download/details.aspx?id=30653)
+[![](https://img.shields.io/badge/.NET-Framework_4.5-4E2ACD.svg)](https://dotnet.microsoft.com/download/dotnet-framework/net45)
 [![](https://img.shields.io/github/v/release/Zalexanninev15/MyIP)](https://github.com/Zalexanninev15/MyIP/releases/latest)
 [![](https://img.shields.io/github/downloads/Zalexanninev15/MyIP/total.svg)](https://github.com/Zalexanninev15/MyIP/releases)
 [![](https://img.shields.io/github/last-commit/Zalexanninev15/MyIP)](https://github.com/Zalexanninev15/MyIP/commits/master)
